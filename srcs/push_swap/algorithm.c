@@ -6,13 +6,13 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 21:41:23 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/05/08 21:56:52 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/11 20:20:18 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
 
-int ft_atoi2(const char *str)
+int	ft_atoi2(const char *str)
 {
 	int				mod;
 	long long int	i;
@@ -20,7 +20,7 @@ int ft_atoi2(const char *str)
 	i = 0;
 	mod = 1;
 	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\f'
-		|| *str == 'v' || *str == '\r')
+		|| *str == '\v' || *str == '\r')
 		str++;
 	if (*str == '-')
 	{
