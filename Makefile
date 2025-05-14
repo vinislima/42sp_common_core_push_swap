@@ -6,107 +6,70 @@
 #    By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/28 20:23:42 by vinda-si          #+#    #+#              #
-#    Updated: 2025/04/30 20:21:16 by vinda-si         ###   ########.fr        #
+#    Updated: 2025/05/14 00:32:06 by vinda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-vpath %.c srcs
-vpath %.c bonus
-
 NAME = push_swap
-NAME_BONUS = checker
+BONUS_NAME = checker
+CC = CC
+CFLAGS = -Wall -Wextra -Werror
+LIBFT_PATH = libft
+LIBFT_ARCHIVE = $(LIBFT_PATH)/libft.a
 
-CC = cc
-FLAGS = -O3 -g3 -L -lft
-CFLAGS = -Wall -Wextra -Werror -g 
+SRC_DIR =			srcs/
+PUSH_SWAP_SRCS =	push_swap/push_swap.c
+COMMON_SRCS =		push_swap/algorithm.c \
+					push_swap/ft_add_back.c \
+					push_swap/ft_stack_new.c \
+					push_swap/ft_check_utils.c \
+					push_swap/ft_parse.c \
+					push_swap/solver_utils_ab.c \
+					push_swap/solver_utils_ba.c \
+					push_swap/ft_rotate_and_push.c \
+					push_swap/operations.c \
+					push_swap/operations_2.c \
+					push_swap/operations_3.c \
+					push_swap/ft_check_dup.c \
+					push_swap/ft_check_sorted.c \
+					push_swap/ft_error_print.c \
+					push_swap/ft_free.c \
+					push_swap/lst_utils.c \
+					push_swap/lst_utils_2.c \
+					push_swap/ft_parse_args_quoted.c \
+					push_swap/ft_list_args.c \
+					push_swap/ft_check_args.c \
+					push_swap/ft_sort_big.c \
+					push_swap/ft_sort_three.c \
+					push_swap/ft_rotate_type.c
 
-LIBFT = ./libft
-LIBS = /include
+BONUS_SRCS =	checker/checker.c \
+				checker/checker_utils.c
 
-RM = rm -f
-FILES = check_list.c \
-		check_max_min_a.c \
-		check_max_min_b.c \
-		checks_cheapest.c \
-		find_cheapest.c \
-		free_anything.c \
-		input_error.c \
-		linked_list_a.c \
-		linked_list_b.c \
-		move_back.c \
-		moves_push.c \
-		moves_rev_rotate.c \
-		moves_rotate.c \
-		moves_swap.c \
-		new_elem_stack_a.c \
-		new_elem_stack_b.c \
-		new_max_stack_a.c \
-		new_min_stack_a.c \
-		push_swap.c \
-		sort_four.c \
-		sort_three.c \
-		sort_two.c \
-		sorting.c
-
-
-
-
-FILES_BONUS = checker_bonus.c \
-			  free_all_bonus.c \
-			  input_error_bonus.c \
-			  linked_list_a_bonus.c \
-			  linked_list_b_bonus.c \
-			  moves_push_bonus.c \
-			  moves_rev_rotate_bonus.c \
-			  moves_rotate_bonus.c \
-			  moves_swap_bonus.c
-
-OBJ_DIR = build
-
-OBJS = $(addprefix $(OBJ_DIR)/, $(FILES:.c=.o))
-OBJS_BONUS = $(addprefix $(OBJ_DIR)/, $(FILES_BONUS:.c=.o))
-
-green = \033[32m
-reset = \033[0m
+PUSH_SWAP_OBJS =	$(addprefix $(SRC_DIR), $(PUSH_SWAP_SRCS:.c=.o))
+COMMON_OBJS =		$(addprefix $(SRC_DIR), $(COMMON_SRCS:.c=.o))
+BONUS_OBJS =		$(addprefix $(SRC_DIR), $(BONUS_SRCS:.c=.o))
 
 all: $(NAME)
 
-$(OBJ_DIR)/%.o: %.c | $(OBJ_DIR)
-	@$(CC) $(CFLAGS) -I.$(LIBS) -c $< -o $@
+$(NAME):	$(PUSH_SWAP_OBJS) $(COMMON_OBJS) $(LIBFT_ARCHIVE)
+			$(CC) $(CFLAGS) -o $@ $^ -L$(LIBFT_PATH) -ltf
 
-$(NAME): $(OBJS)
-	@make -C $(LIBFT)
-	$(CC) $(OBJS) $(CFLAGS) $(LIBFT)/libft.a -O3 -g3 -L -lft -o $(NAME)
-	@echo "$(green)Executable $(NAME) created successfully!$(reset)"
+bonus:	$(BONUS_NAME)
 
-bonus: $(NAME_BONUS)
+$(BONUS_NAME):	$(BONUS_OBJS) $(COMMON_OBJS) $(LIBFT_ARCHIVE)
+				$(CC) $(CFLAGS) -o $@ $^ -L$(LIBFT_PATH) -ltf
 
-# Compilação do programa bônus
-$(NAME_BONUS): $(OBJS_BONUS)
-	@make -C $(LIBFT)
-	$(CC) $(OBJS_BONUS) $(CFLAGS) $(LIBFT)/libft.a $(FLAGS) -o $(NAME_BONUS)
-	@echo "$(green)Executable $(NAME_BONUS) created successfully!$(reset)"
+%.o: %.c
+		$(CC) $(CFLAGS) -c $< -o $@
 
-# Criação do diretório para os objetos
-$(OBJ_DIR):
-	mkdir -p $(OBJ_DIR)
+$(LIBFT_ARCHIVE):
+		$(MAKE) -C $(LIBFT_PATH)
 
-# Limpeza dos objetos
 clean:
-	@make clean -C $(LIBFT)
-	@$(RM) $(OBJS) $(OBJS_BONUS)
-	@echo "$(green)Objects cleaned successfully!$(reset)"
+		rm -f $(PUSH_SWAP_OBJS) $(COMMON_OBJS) $(BONUS_OBJS)
+		$(MAKE) -C $(LIBFT_PATH) fclean
 
-# Limpeza total
-fclean: clean
-	@make fclean -C $(LIBFT)
-	@$(RM) $(NAME) $(NAME_BONUS)
-	@echo "$(green)All files cleaned successfully!$(reset)"
+re:	fclean all
 
-# Recompilação completa
-re: fclean all
-
-# Recompilação completa com bônus
-re_bonus: fclean bonus
-
-.PHONY: all clean fclean re bonus re_bonus
+.PHONY: all clean fclean re bonus
