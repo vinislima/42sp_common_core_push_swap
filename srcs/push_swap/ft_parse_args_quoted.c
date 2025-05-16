@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 18:07:24 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/05/11 20:36:21 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/15 19:10:37 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,8 @@ t_stack	*ft_parse_args_quoted(char **argv)
 {
 	t_stack	*stack_a;
 	char	**tmp;
-	int		i;
-	int		j;
 
 	stack_a = NULL;
-	i = 0;
 	tmp = ft_split(argv[1], 32);
 	list_args(tmp, &stack_a);
 	ft_freestr(tmp);

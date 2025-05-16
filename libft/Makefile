@@ -6,7 +6,7 @@
 #    By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 14:34:44 by vinda-si          #+#    #+#              #
-#    Updated: 2025/04/30 20:26:03 by vinda-si         ###   ########.fr        #
+#    Updated: 2025/05/15 22:44:17 by vinda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,7 @@ SRCS =	ft_atoi.c \
 		ft_puthexa.c \
 		ft_putnbr.c \
 		ft_putptr.c \
+		get_next_line.c
 
 HEADERS = libft.h
 OBJS = $(SRCS:.c=.o)
@@ -79,6 +80,6 @@ clean:
 fclean: clean
 		$(RM) $(NAME)
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY: all clean fclean re
