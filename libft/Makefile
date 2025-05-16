@@ -6,7 +6,7 @@
 #    By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 14:34:44 by vinda-si          #+#    #+#              #
-#    Updated: 2025/05/15 22:44:17 by vinda-si         ###   ########.fr        #
+#    Updated: 2025/05/16 14:13:50 by vinda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ OBJS = $(SRCS:.c=.o)
 
 CC = cc
 RM = rm -f
-CFLAGS = -Wall -Wextra -Werror -O3  -g3 -I../include
+CFLAGS = -Wall -Wextra -Werror
 AR = ar
 RANLIB = ranlib
 
