@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 15:56:50 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/05/16 13:58:19 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/16 20:14:47 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <stdbool.h>
-#include <unistd.h>
-#include <stdio.h>
+# include <unistd.h>
+# include <stdio.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42

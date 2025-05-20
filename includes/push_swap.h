@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 19:10:04 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/05/08 20:51:09 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/19 22:55:52 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int			sign(int c);
 int			digit(int c);
 int			space(int c);
 void		ft_error(void);
+void		ft_error_none(void);
 void		ft_free(t_stack **lst);
 t_stack		*ft_lstlast(t_stack *lst);
 void		ft_ra(t_stack **a, int j);
@@ -90,5 +91,12 @@ void		algorithm(int argc, char **argv);
 void		ft_sort_b_till_3(t_stack **stack_a, t_stack **stack_b);
 t_stack		*ft_sub_process(char **argv);
 void		ft_error_ch(void);
+int			ft_is_valid_int_part1(const char *str, int *mod);
+int			ft_is_valid_int(const char *str);
+int			ft_check_duplicates(char **arr, int count);
+int			ft_validate_split_args(char **tmp);
+int			ft_validate_args(int argc, char **argv);
+t_stack		*ft_build_stack(char **arr, int count);
+int			ft_atoi2(const char *str);
 
 #endif

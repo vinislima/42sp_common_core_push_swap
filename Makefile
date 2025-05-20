@@ -6,7 +6,7 @@
 #    By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/28 20:23:42 by vinda-si          #+#    #+#              #
-#    Updated: 2025/05/15 21:47:42 by vinda-si         ###   ########.fr        #
+#    Updated: 2025/05/19 22:21:30 by vinda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,8 @@ COMMON_SRCS =		srcs/push_swap/algorithm.c \
 					srcs/push_swap/ft_check_args.c \
 					srcs/push_swap/ft_sort_big.c \
 					srcs/push_swap/ft_sort_three.c \
+					srcs/push_swap/ft_validation.c \
+					srcs/push_swap/ft_validation2.c \
 					srcs/push_swap/ft_rotate_type.c \
 
 BONUS_SRCS =	srcs/checker/checker.c \
