@@ -6,7 +6,7 @@
 #    By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/28 20:23:42 by vinda-si          #+#    #+#              #
-#    Updated: 2025/05/19 22:21:30 by vinda-si         ###   ########.fr        #
+#    Updated: 2025/05/20 19:57:59 by vinda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,13 +47,8 @@ COMMON_SRCS =		srcs/push_swap/algorithm.c \
 					srcs/push_swap/ft_validation2.c \
 					srcs/push_swap/ft_rotate_type.c \
 
-BONUS_SRCS =	srcs/checker/checker.c \
-				srcs/checker/checker_utils.c \
-
 OBJ_PUSH =		${PUSH_SWAP_SRCS:.c=.o}
 OBJ_COMMON =	${COMMON_SRCS:.c=.o}
-
-BONUS_OBJ = ${BONUS_SRCS:.c=.o}
 
 INCLUDE = -L ./libft -lft
 
@@ -64,16 +59,10 @@ ${NAME}: ${OBJ_PUSH} ${OBJ_COMMON}
 	make -C $(LIBFT_PATH)
 	${CC} ${CFLAGS} ${OBJ_PUSH} ${OBJ_COMMON} -o ${NAME} ${INCLUDE}
 
-${BONUS}: ${OBJ_COMMON} ${BONUS_OBJ}
-	make -C $(LIBFT_PATH)
-	${CC} ${CFLAGS} ${BONUS_OBJ} ${OBJ_COMMON} -o ${BONUS} ${INCLUDE}
-
-all: ${NAME} ${BONUS}
-
-bonus: ${BONUS}
+all: ${NAME}
 
 clean:
-	${RM} ${OBJ_PUSH} ${OBJ_COMMON} ${BONUS_OBJ} ${NAME} ${BONUS}
+	${RM} ${OBJ_PUSH} ${OBJ_COMMON} ${NAME} ${BONUS}
 	@cd $(LIBFT_PATH) && $(MAKE) clean
 
 fclean: clean

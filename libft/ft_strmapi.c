@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:43:51 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/29 17:56:20 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:17:18 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

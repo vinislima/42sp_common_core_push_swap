@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:24:28 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/28 15:57:03 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:18:29 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

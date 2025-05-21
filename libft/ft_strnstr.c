@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 16:00:33 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 10:08:41 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:17:54 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

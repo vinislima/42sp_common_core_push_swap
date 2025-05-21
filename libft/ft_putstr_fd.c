@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 08:26:29 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 08:43:33 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:15:30 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
-void	ft_putstr_fd(char *s, int fd);
 
 void	ft_putstr_fd(char *s, int fd)
 {

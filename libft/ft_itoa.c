@@ -6,14 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 22:53:20 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/29 14:26:37 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:13:33 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-static int	ft_get_num_length(int n);
-char		*ft_itoa(int n);
+#include "libft.h"
 
 static int	ft_get_num_length(int n)
 {

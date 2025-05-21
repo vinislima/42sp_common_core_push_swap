@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 19:10:04 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/05/19 22:55:52 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:56:18 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,15 +82,10 @@ int			ft_apply_rrarrb(t_stack **a, t_stack **b, int c, char s);
 int			ft_apply_rrarb(t_stack **a, t_stack **b, int c, char s);
 int			ft_apply_rarrb(t_stack **a, t_stack **b, int c, char s);
 void		ft_rrb(t_stack **b, int j);
-void		ft_check_sub(t_stack **a, t_stack **b, char *line);
-char		*ft_check(t_stack **a, t_stack **b, char *line);
-void		ft_checker_sub(t_stack **a, t_stack **b, char *line);
 t_stack		*ft_process(int argc, char **argv);
 void		ft_sb(t_stack **b, int j);
-void		algorithm(int argc, char **argv);
 void		ft_sort_b_till_3(t_stack **stack_a, t_stack **stack_b);
 t_stack		*ft_sub_process(char **argv);
-void		ft_error_ch(void);
 int			ft_is_valid_int_part1(const char *str, int *mod);
 int			ft_is_valid_int(const char *str);
 int			ft_check_duplicates(char **arr, int count);

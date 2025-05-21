@@ -6,11 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 16:24:59 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/28 15:13:11 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:18:59 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c);
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

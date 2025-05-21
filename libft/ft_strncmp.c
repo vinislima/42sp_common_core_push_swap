@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 14:18:03 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 12:11:05 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:17:48 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

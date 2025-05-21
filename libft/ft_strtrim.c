@@ -6,14 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:10:21 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/28 17:54:10 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:18:21 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char		*ft_strtrim(char const *s1, char const *set);
-static int	in_set(char c, const char *set);
 
 static int	in_set(char c, const char *set)
 {

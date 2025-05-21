@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 17:18:44 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/12 22:02:18 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:15:23 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_putptr(unsigned long ptr);
 
 int	ft_putptr(unsigned long ptr)
 {

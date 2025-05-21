@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:23:02 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/28 17:04:14 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:16:43 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strjoin(char const *s1, char const *s2);
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

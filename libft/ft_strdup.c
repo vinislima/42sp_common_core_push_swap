@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:32:49 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/26 15:26:55 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:16:26 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strdup(const char *s);
 
 char	*ft_strdup(const char *s)
 {

@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:30:28 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/12 21:56:48 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:15:57 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_putunbr(unsigned int num);
 
 int	ft_putunbr(unsigned int num)
 {

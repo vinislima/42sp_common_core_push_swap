@@ -6,14 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 10:10:29 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/14 19:33:22 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:14:15 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int			ft_printf(const char *string, ...);
-static int	ft_signal(va_list args, char signal);
 
 static int	ft_signal(va_list args, char signal)
 {

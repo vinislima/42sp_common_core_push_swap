@@ -6,18 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 21:11:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 11:45:14 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:16:10 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-static size_t	ft_count_words(char const *s, char c);
-static char		*ft_allocate_word(char const *s, char c);
-static void		ft_free_split(char **split, size_t i);
-static int		ft_add_word(char **split, size_t *count,
-					char const **s, char c);
-char			**ft_split(char const *s, char c);
+#include "libft.h"
 
 static size_t	ft_count_words(char const *s, char c)
 {

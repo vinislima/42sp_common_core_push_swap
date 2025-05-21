@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:12:21 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 10:42:25 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:13:24 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	*ft_memchr(const void *s, int c, size_t n);
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

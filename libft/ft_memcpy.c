@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:06:30 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 12:16:49 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:13:54 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	*ft_memcpy(void *dest, const void *src, size_t n);
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

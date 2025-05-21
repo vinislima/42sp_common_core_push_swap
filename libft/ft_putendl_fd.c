@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 08:18:44 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 08:47:27 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:14:49 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putendl_fd(char *s, int fd);
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

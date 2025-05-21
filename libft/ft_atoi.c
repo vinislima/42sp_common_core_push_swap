@@ -6,11 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 09:45:52 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/28 15:07:55 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:11:51 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *nptr);
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

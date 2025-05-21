@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:55:24 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 10:42:42 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:13:41 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

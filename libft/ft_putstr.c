@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 10:34:12 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/05/15 21:26:20 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:15:37 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_putstr(const char *string);
 
 int	ft_putstr(const char *string)
 {

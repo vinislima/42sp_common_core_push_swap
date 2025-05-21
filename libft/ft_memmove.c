@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 09:08:45 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/30 10:43:28 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:14:01 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-void	*ft_memmove(void *dest, const void *src, size_t n);
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

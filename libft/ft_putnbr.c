@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 16:50:59 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/12 21:57:31 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:15:16 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_putnbr(int num);
 
 int	ft_putnbr(int num)
 {

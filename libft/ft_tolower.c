@@ -6,11 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 18:04:17 by vinda-si          #+#    #+#             */
-/*   Updated: 2024/10/28 15:13:06 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:18:35 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c);
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

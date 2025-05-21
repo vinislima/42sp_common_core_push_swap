@@ -6,13 +6,11 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:37:42 by vinda-si          #+#    #+#             */
-/*   Updated: 2025/03/12 21:57:12 by vinda-si         ###   ########.fr       */
+/*   Updated: 2025/05/20 19:14:58 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_puthexa(unsigned int num, char signal);
 
 int	ft_puthexa(unsigned int num, char signal)
 {
